@@ -1,5 +1,7 @@
 import random
 
+number_of_attempts = 6  # со скольки попыток нужно угадать
+
 user_name = input("Привет. Как тебя зовут? ")
 
 numbers = random.randint(1, 20)
@@ -7,7 +9,7 @@ numbers = random.randint(1, 20)
 attempts = 0
 
 print(f"{user_name}, я загадываю число от 1 до 20, угадай какое за 6 попыток.")
-for _ in range(6):
+for _ in range(number_of_attempts):
     attempts += 1
     user_answer = int(input("Введи число: "))
     if user_answer == numbers:
