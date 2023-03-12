@@ -20,5 +20,5 @@ for _ in range(number_of_attempts):
         print("Твое число слишком большое, попробуй ещё раз.")
     else:
         print("Твое число слишком маленькое, попробуй ещё раз.")
-if attempts == 6:
+if attempts == number_of_attempts:
     print(f"Ты проиграл :(\nЯ загадывал число {numbers}")
